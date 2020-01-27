@@ -9,13 +9,13 @@ public void draw()
 }
 public void mouseDragged()
 {
-
+	fill(mouseX, 100, mouseY);
 }
 public void sierpinski(int x, int y, int len) 
 {
 	if(len <= 15) {
 		noStroke();
-		fill((int)(Math.random() * 100) + 105, (int)(Math.random() * 50) + 105, (int)(Math.random() * 100) + 155);
+		//fill((int)(Math.random() * 100) + 105, (int)(Math.random() * 50) + 105, (int)(Math.random() * 100) + 155);
 		triangle(x, y, x + (len / 2), y - len, x + len, y);
 	} else {
 		sierpinski(x, y, len / 2);
